@@ -250,8 +250,4 @@ MIT License
 
 欢迎提交Issue和Pull Request！
 
-## 联系方式
 
-如有问题或建议，可通过以下方式联系：
-- 邮箱：your-email@example.com
-- GitHub：https://github.com/your-username/family-cloud-drive
