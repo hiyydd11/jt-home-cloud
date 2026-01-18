@@ -1,3 +1,6 @@
+
+
+```markdown
 # 家庭云盘 / Family Cloud Drive
 
 一个功能完整的家庭云盘应用，支持文件存储、管理、分享和预览，仅存储在本地设备硬盘中，不进行云端同步。
@@ -56,9 +59,11 @@ cd 家庭云盘
 
 # 3. 执行启动脚本 / Execute the startup script
 ./start.sh start
-方法二：手动安装与启动 / Method 2: Manual installation & startup
-bash
-运行
+```
+
+#### 方法二：手动安装与启动 / Method 2: Manual installation & startup
+
+```bash
 # 1. 安装后端依赖 / Install backend dependencies
 npm install
 
@@ -74,51 +79,70 @@ cd ..
 
 # 5. 启动服务 / Start the service
 npm start
-3. 访问服务 / Access the Service
-浏览器访问 / Browser Access：在浏览器中输入 http://服务器IP:3000 / Enter http://[Server IP]:3000 in the browser
-设备发现 / Device Discovery：在支持 mDNS 的设备上，可直接访问 http://familyclouddrive.local:3000 / On mDNS-supported devices, access directly via http://familyclouddrive.local:3000
-使用说明 / User Guide
-1. 用户注册与登录 / User Registration & Login
-第一次使用时，点击 "立即注册" 创建新用户 / On first use, click "Register Now" to create a new user
-注册成功后，使用用户名和密码登录 / After successful registration, log in with username and password
-登录后进入文件管理界面 / After login, enter the file management interface
-2. 文件管理 / File Management
-上传文件 / Upload Files
-点击 "上传文件" 按钮 / Click the "Upload Files" button
-选择要上传的文件，支持多选 / Select files to upload (multiple selection supported)
-等待上传完成 / Wait for upload completion
-下载文件 / Download Files
-点击文件右侧的 "下载" 按钮 / Click the "Download" button next to the file
-选择保存位置 / Choose save location
-批量下载 / Batch Download
-勾选多个文件 / Check multiple files
-点击 "批量下载" 按钮 / Click the "Batch Download" button
-系统会将选中的文件打包为 ZIP 格式下载 / The system will package selected files into ZIP format for download
-下载整个文件夹 / Download Entire Folder
-进入要下载的文件夹 / Enter the folder to be downloaded
-点击 "下载当前文件夹" 按钮 / Click the "Download Current Folder" button
-系统会将整个文件夹打包为 ZIP 格式下载 / The system will package the entire folder into ZIP format for download
-创建文件夹 / Create Folder
-点击 "创建文件夹" 按钮 / Click the "Create Folder" button
-输入文件夹名称 / Enter folder name
-点击 "创建" / Click "Create"
-删除文件或文件夹 / Delete Files or Folders
-点击文件或文件夹右侧的 "删除" 按钮 / Click the "Delete" button next to the file/folder
-确认删除操作 / Confirm deletion
-重命名文件或文件夹 / Rename Files or Folders
-点击文件或文件夹右侧的 "重命名" 按钮 / Click the "Rename" button next to the file/folder
-输入新名称 / Enter new name
-点击 "确定" / Click "Confirm"
-文件预览 / File Preview
-点击图片、视频、音频等支持预览的文件右侧的 "预览" 按钮 / Click the "Preview" button next to preview-supported files (images, videos, audio, etc.)
-在弹出的预览窗口中查看文件内容 / View file content in the pop-up preview window
-3. 文件夹导航 / Folder Navigation
-在左侧文件夹树中点击文件夹名称进入对应文件夹 / Click folder names in the left folder tree to enter corresponding folders
-文件夹树支持展开和折叠 / Folder tree supports expansion and collapse
-命令说明 / Command Reference
-启动脚本命令 / Startup Script Commands
-bash
-运行
+```
+
+### 3. 访问服务 / Access the Service
+
+- **浏览器访问 / Browser Access**：在浏览器中输入 `http://服务器IP:3000` / Enter `http://[Server IP]:3000` in the browser
+- **设备发现 / Device Discovery**：在支持mDNS的设备上，可直接访问 `http://familyclouddrive.local:3000` / On mDNS-supported devices, access directly via `http://familyclouddrive.local:3000`
+
+## 使用说明 / User Guide
+
+### 1. 用户注册与登录 / User Registration & Login
+
+1. 第一次使用时，点击"立即注册"创建新用户 / On first use, click "Register Now" to create a new user
+2. 注册成功后，使用用户名和密码登录 / After successful registration, log in with username and password
+3. 登录后进入文件管理界面 / After login, enter the file management interface
+
+### 2. 文件管理 / File Management
+
+#### 上传文件 / Upload Files
+1. 点击"上传文件"按钮 / Click the "Upload Files" button
+2. 选择要上传的文件，支持多选 / Select files to upload (multiple selection supported)
+3. 等待上传完成 / Wait for upload completion
+
+#### 下载文件 / Download Files
+1. 点击文件右侧的"下载"按钮 / Click the "Download" button next to the file
+2. 选择保存位置 / Choose save location
+
+#### 批量下载 / Batch Download
+1. 勾选多个文件 / Check multiple files
+2. 点击"批量下载"按钮 / Click the "Batch Download" button
+3. 系统会将选中的文件打包为ZIP格式下载 / The system will package selected files into ZIP format for download
+
+#### 下载整个文件夹 / Download Entire Folder
+1. 进入要下载的文件夹 / Enter the folder to be downloaded
+2. 点击"下载当前文件夹"按钮 / Click the "Download Current Folder" button
+3. 系统会将整个文件夹打包为ZIP格式下载 / The system will package the entire folder into ZIP format for download
+
+#### 创建文件夹 / Create Folder
+1. 点击"创建文件夹"按钮 / Click the "Create Folder" button
+2. 输入文件夹名称 / Enter folder name
+3. 点击"创建" / Click "Create"
+
+#### 删除文件或文件夹 / Delete Files or Folders
+1. 点击文件或文件夹右侧的"删除"按钮 / Click the "Delete" button next to the file/folder
+2. 确认删除操作 / Confirm deletion
+
+#### 重命名文件或文件夹 / Rename Files or Folders
+1. 点击文件或文件夹右侧的"重命名"按钮 / Click the "Rename" button next to the file/folder
+2. 输入新名称 / Enter new name
+3. 点击"确定" / Click "Confirm"
+
+#### 文件预览 / File Preview
+1. 点击图片、视频、音频等支持预览的文件右侧的"预览"按钮 / Click the "Preview" button next to preview-supported files (images, videos, audio, etc.)
+2. 在弹出的预览窗口中查看文件内容 / View file content in the pop-up preview window
+
+### 3. 文件夹导航 / Folder Navigation
+
+- 在左侧文件夹树中点击文件夹名称进入对应文件夹 / Click folder names in the left folder tree to enter corresponding folders
+- 文件夹树支持展开和折叠 / Folder tree supports expansion and collapse
+
+## 命令说明 / Command Reference
+
+### 启动脚本命令 / Startup Script Commands
+
+```bash
 # 启动服务 / Start service
 ./start.sh start
 
@@ -133,9 +157,11 @@ bash
 
 # 仅安装依赖和构建前端 / Only install dependencies and build frontend
 ./start.sh install
-PM2 命令（如果使用 PM2 启动） / PM2 Commands (if using PM2 for startup)
-bash
-运行
+```
+
+### PM2命令（如果使用PM2启动） / PM2 Commands (if using PM2 for startup)
+
+```bash
 # 查看服务状态 / Check service status
 pm2 status
 
@@ -147,8 +173,11 @@ pm2 restart family-cloud-drive
 
 # 查看服务日志 / View service logs
 pm2 logs family-cloud-drive
-项目结构 / Project Structure
-plaintext
+```
+
+## 项目结构 / Project Structure
+
+```
 家庭云盘/ (FamilyCloudDrive/)
 ├── backend/              # 后端代码 / Backend code
 ├── frontend/             # 前端代码 / Frontend code
@@ -158,10 +187,16 @@ plaintext
 ├── start.sh              # 启动脚本 / Startup script
 ├── package.json          # 后端依赖 / Backend dependencies
 └── README.md             # 项目说明 / Project documentation
-配置说明 / Configuration Guide
-环境变量配置 / Environment Variable Configuration
-可通过修改 .env 文件调整服务配置：Service configuration can be adjusted by modifying the .env file:
-env
+```
+
+## 配置说明 / Configuration Guide
+
+### 环境变量配置 / Environment Variable Configuration
+
+可通过修改 `.env` 文件调整服务配置：
+Service configuration can be adjusted by modifying the `.env` file:
+
+```env
 # 服务器配置 / Server Configuration
 PORT=3000                # 服务端口 / Service port
 HOST=0.0.0.0             # 服务地址 / Service address
@@ -180,29 +215,44 @@ JWT_EXPIRES_IN=24h               # JWT过期时间 / JWT expiration time
 MDNS_NAME=FamilyCloudDrive       # mDNS服务名称 / mDNS service name
 MDNS_TYPE=http                   # 服务类型 / Service type
 MDNS_PROTOCOL=tcp                # 服务协议 / Service protocol
-注意事项 / Notes
-数据安全 / Data Security：请定期备份 data 目录，以防止数据丢失 / Regularly back up the data directory to prevent data loss
-性能建议 / Performance Suggestions：对于大量文件或大文件存储，建议使用 SSD 硬盘 / For storing large numbers of files or large files, SSD hard drives are recommended
-网络环境 / Network Environment：确保服务器和客户端在同一局域网内 / Ensure server and clients are within the same LAN
-端口占用 / Port Occupancy：如果 3000 端口被占用，可在 .env 文件中修改 PORT 配置 / If port 3000 is occupied, modify the PORT configuration in the .env file
-后台运行 / Background Running：推荐使用 PM2 实现服务的后台运行和自动重启 / PM2 is recommended for background running and automatic restart of the service
-常见问题 / Frequently Asked Questions (FAQ)
-Q: 如何修改服务端口？ / How to modify the service port?
-A: 修改 .env 文件中的 PORT 配置，然后重启服务。 / Modify the PORT configuration in the .env file and restart the service.
-Q: 如何查看服务日志？ / How to view service logs?
-A: 如果使用 PM2 启动，可通过 pm2 logs family-cloud-drive 查看日志。 / If started with PM2, view logs via pm2 logs family-cloud-drive.
-Q: 忘记密码怎么办？ / What if I forget my password?
+```
+
+## 注意事项 / Notes
+
+1. **数据安全 / Data Security**：请定期备份 `data` 目录，以防止数据丢失 / Regularly back up the `data` directory to prevent data loss
+2. **性能建议 / Performance Suggestions**：对于大量文件或大文件存储，建议使用SSD硬盘 / For storing large numbers of files or large files, SSD hard drives are recommended
+3. **网络环境 / Network Environment**：确保服务器和客户端在同一局域网内 / Ensure server and clients are within the same LAN
+4. **端口占用 / Port Occupancy**：如果3000端口被占用，可在 `.env` 文件中修改 `PORT` 配置 / If port 3000 is occupied, modify the `PORT` configuration in the `.env` file
+5. **后台运行 / Background Running**：推荐使用PM2实现服务的后台运行和自动重启 / PM2 is recommended for background running and automatic restart of the service
+
+## 常见问题 / Frequently Asked Questions (FAQ)
+
+### Q: 如何修改服务端口？ / How to modify the service port?
+A: 修改 `.env` 文件中的 `PORT` 配置，然后重启服务。 / Modify the `PORT` configuration in the `.env` file and restart the service.
+
+### Q: 如何查看服务日志？ / How to view service logs?
+A: 如果使用PM2启动，可通过 `pm2 logs family-cloud-drive` 查看日志。 / If started with PM2, view logs via `pm2 logs family-cloud-drive`.
+
+### Q: 忘记密码怎么办？ / What if I forget my password?
 A: 目前不支持密码重置功能，可重新注册新用户。 / Password reset is not currently supported; please register a new user.
-Q: 支持哪些文件格式预览？ / What file formats are supported for preview?
-A: 支持图片（JPG、PNG、GIF 等）、视频（MP4、WebM 等）、音频（MP3、WAV 等）、文本（TXT、MD 等）等常见格式。 / Common formats are supported including images (JPG, PNG, GIF, etc.), videos (MP4, WebM, etc.), audio (MP3, WAV, etc.), and text (TXT, MD, etc.).
-更新日志 / Changelog
-v1.0.0 (2026-01-18)
-初始版本发布 / Initial release
-实现核心文件管理功能 / Implemented core file management functions
-支持批量操作和文件夹下载 / Supported batch operations and folder downloads
-实现设备发现功能 / Implemented device discovery functionality
-支持文件预览 / Supported file preview
-许可证 / License
+
+### Q: 支持哪些文件格式预览？ / What file formats are supported for preview?
+A: 支持图片（JPG、PNG、GIF等）、视频（MP4、WebM等）、音频（MP3、WAV等）、文本（TXT、MD等）等常见格式。 / Common formats are supported including images (JPG, PNG, GIF, etc.), videos (MP4, WebM, etc.), audio (MP3, WAV, etc.), and text (TXT, MD, etc.).
+
+## 更新日志 / Changelog
+
+### v1.0.0 (2026-01-18)
+- 初始版本发布 / Initial release
+- 实现核心文件管理功能 / Implemented core file management functions
+- 支持批量操作和文件夹下载 / Supported batch operations and folder downloads
+- 实现设备发现功能 / Implemented device discovery functionality
+- 支持文件预览 / Supported file preview
+
+## 许可证 / License
+
 MIT License
-贡献 / Contribution
-欢迎提交 Issue 和 Pull Request！ / Issues and Pull Requests are welcome!
+
+## 贡献 / Contribution
+
+欢迎提交Issue和Pull Request！ / Issues and Pull Requests are welcome!
+```
